@@ -1,16 +1,13 @@
 """Developer Notes:
     Hover Over Functions if you do not know what they do, The Docstrings included will help provide context
 
-    There is still some todos (Not All Nessesary) that would be great to implement:
-
+    Future Modules
         !!Stability & Security!!
         API Key Security (Calling on .env using os.getenv)
-
         !!Data Handling!!
         Allow for Saving Simple and Detailed Reporting, only Simple at the minute
         Allow txt to save exactly as is printed in terminal e.g Rain Chance Bar not saved to txt
-
-        Reporting on Compare Cities
+        !!Reporting on Compare Cities
             Prints Side By Side metrics
             Maybe prints which is hottest, least chance of rain in a summary
         Reprint Saved Reports to terminal
@@ -18,7 +15,7 @@
 
         Testing edge cases and working on report"""
 
-"""Git Happens API Scenario Main Program.
+"""Git Happens API Scenario Main Program. Soon to be Library for client.py
 
 Program Information:
     Data Flow:
