@@ -1,6 +1,19 @@
 import tkinter as tk
+from tkinter import messagebox
 import weatherlib as wl
 from weatherlib import APIHandler
+
+# --- Functions ---
+# need to get working
+def submit_data(c1, c2, dte):
+    try:
+        if c1 and c2 and dte:
+            messagebox.showinfo(f"{c1.get()},{c2.get()},{dte.get()}")
+            return True
+        else:
+            return False
+    except Exception as err:
+        messagebox.showwarning(f"err")
 
 # --- GUI Functions ---
 def newrep_dash():
@@ -24,7 +37,8 @@ def newrep_dash():
     dateinput.place(x=50,y=160)
 
 
-    submitdata = tk.Button(repdash, text="Submit Data")
+    submitdata = tk.Button(repdash, text="Submit Data", command=submit_data(city1,city2,dateinput))
+    submitdata.place(x=50,y=200)
 
 
 # --- Main GUI Loop ---
